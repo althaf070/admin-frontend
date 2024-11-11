@@ -19,8 +19,8 @@ const App = () => {
       <div className="flex">
         <Routes>
           <Route path="/login" element={<Registration />} />
-          <Route element={<AuthenticatedLayout />}>
           <Route path="/register" element={<Registration isRegistration />} />
+          <Route element={<AuthenticatedLayout />}>
             <Route path="/" element={<Dashboard />} />
             <Route path="admin/users" element={<Userpage />} />
             <Route path="admin/userdetail/:id" element={<UserDetails />} />
